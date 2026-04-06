@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-text-primary bg-background transition-colors duration-300;
+  }
+  .dark body {
+    @apply text-text-primary-dark bg-background-dark;
+  }
+}
+
+/* Custom Scrollbar for better look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-border rounded-full hover:bg-text-secondary;
+}
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-border-dark hover:bg-text-secondary-dark;
+}
