@@ -2,6 +2,8 @@
 
 A modern personal finance management application built with React, Vite, and Tailwind CSS.
 
+**Live Demo:** [zorvynfintechfinancedashboard.netlify.app](https://zorvynfintechfinancedashboard.netlify.app/)
+
 ## Features
 
 - **Dashboard:** Overview of balance, income, and expenses.
@@ -10,22 +12,22 @@ A modern personal finance management application built with React, Vite, and Tai
 - **Role-Based UI:** Toggle between Admin and Viewer modes.
 - **Theming:** Seamless dark and light mode toggle.
 
-## Deployment to Vercel
+## Deployment to Netlify
 
-This project is ready to be deployed to Vercel.
+This project is deployed and hosted on Netlify.
 
 ### Steps to Deploy
 
 1. **Push to GitHub:** Push your code to a GitHub repository.
-2. **Import to Vercel:**
-   - Go to [Vercel Dashboard](https://vercel.com/dashboard).
-   - Click **Add New...** -> **Project**.
+2. **Import to Netlify:**
+   - Go to [Netlify Dashboard](https://app.netlify.com/).
+   - Click **Add new site** -> **Import an existing project**.
    - Import your GitHub repository.
-3. **Deploy:** Click **Deploy**. Vercel will automatically detect the Vite project and build it.
+3. **Deploy:** Click **Deploy site**. Netlify will automatically detect the Vite project and build it.
 
 ## Client-Side Routing
 
-The `vercel.json` file is included to handle client-side routing (rewrites), ensuring that refreshing the page on any route (like `/transactions` or `/insights`) works correctly.
+A `public/_redirects` file is included to handle client-side routing, ensuring that refreshing the page on any route (like `/transactions` or `/insights`) works correctly on Netlify.
 
 ## Local Development
 
